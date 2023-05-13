@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:weightSum="10"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="drawable.demo1.MainActivity"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Hello World 1!"
+        android:textSize="30sp"
+        android:background="#4444"
+        android:layout_weight="1"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Hello World 3!"
+        android:textSize="36dp"
+        android:textColor="#0dff2d"
+        android:background = "#123456"
+        android:layout_weight="2"
+        android:gravity="bottom"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Hello World 4!"
+        android:textSize="36dp"
+        android:textColor="#ff0890"
+        android:background = "#90d685"
+        android:layout_weight="3"
+        android:gravity="center"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Hello World 5!"
+        android:textSize="36dp"
+        android:textColor="#2d0dff"
+        android:background = "#9cfaff"
+        android:layout_weight="4"
+        android:gravity="right"
+        />
+
+</LinearLayout>
