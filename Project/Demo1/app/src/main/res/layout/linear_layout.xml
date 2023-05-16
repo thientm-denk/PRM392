@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout android:weightSum="10"
     xmlns:android="http://schemas.android.com/apk/res/android"
+
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    tools:context="drawable.demo1.MainActivity"
     xmlns:tools="http://schemas.android.com/tools">
 
     <TextView
@@ -34,7 +34,7 @@
         android:text="Hello World 4!"
         android:textSize="36dp"
         android:textColor="#ff0890"
-        android:background = "#90d685"
+        android:background = "#FFFFF"
         android:layout_weight="3"
         android:gravity="center"
         />
