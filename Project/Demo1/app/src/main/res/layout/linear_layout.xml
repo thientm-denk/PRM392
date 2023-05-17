@@ -21,7 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:text="Hello World 3!"
-        android:textSize="36dp"
+        android:textSize="36sp"
         android:textColor="#0dff2d"
         android:background = "#123456"
         android:layout_weight="2"
@@ -32,9 +32,8 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:text="Hello World 4!"
-        android:textSize="36dp"
+        android:textSize="36sp"
         android:textColor="#ff0890"
-        android:background = "#FFFFF"
         android:layout_weight="3"
         android:gravity="center"
         />
@@ -42,11 +41,11 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:text="Hello World 5!"
-        android:textSize="36dp"
+        android:textSize="36sp"
         android:textColor="#2d0dff"
         android:background = "#9cfaff"
         android:layout_weight="4"
         android:gravity="right"
-        />
+        tools:ignore="RtlHardcoded" />
 
 </LinearLayout>
