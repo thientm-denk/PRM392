@@ -13,7 +13,7 @@
         android:theme="@style/Theme.Demo1"
         tools:targetApi="31">
         <activity
-            android:name="drawable.demo1.MainActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
