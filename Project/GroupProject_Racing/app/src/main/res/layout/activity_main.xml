@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:text="Balance"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SeekBar
+        android:id="@+id/seekBarNumber1"
+        android:layout_width="280dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="42dp"
+        app:srcCompat="@drawable/hoe"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxNumber1"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+
+    <SeekBar
+        android:id="@+id/seekBarNumber2"
+        android:layout_width="278dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="69dp"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxNumber2"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarNumber1" />
+
+    <SeekBar
+        android:id="@+id/seekBarNumber3"
+        android:layout_width="277dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="78dp"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxNumber3"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarNumber2" />
+
+    <Button
+        android:id="@+id/buttonStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="58dp"
+        android:text="Start"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarNumber3" />
+
+    <CheckBox
+        android:id="@+id/checkBoxNumber1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="21dp"
+        android:text="N1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <CheckBox
+        android:id="@+id/checkBoxNumber2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="46dp"
+        android:text="N2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxNumber1" />
+
+    <CheckBox
+        android:id="@+id/checkBoxNumber3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="45dp"
+        android:text="N3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxNumber2" />
+
+    <Button
+        android:id="@+id/buttonRestart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="100dp"
+        android:text="Restart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewResult" />
+
+    <TextView
+        android:id="@+id/textViewBalance"
+        android:layout_width="196dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="40dp"
+        android:text="TextView"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="28dp"
+        android:text="Welcome!"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonStart" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
