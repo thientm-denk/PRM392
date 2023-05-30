@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="329dp"
+        android:layout_above="@+id/racingArea"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-132dp"
+        android:background="@drawable/derbyhorse"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/ed_money"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:background="@color/red"
+                android:enabled="false"
+                android:text="10000"
+                android:textAlignment="center"
+                android:textColor="@color/yellow"
+                android:textSize="24dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6" />
+
+            <Button
+                android:id="@+id/btn_exit"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_gravity="end"
+                android:layout_weight="0.1"
+                android:background="@drawable/baseline_exit_to_app_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.006" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0.8"
+            android:layout_x="179dp"
+            android:layout_y="60dp"
+            android:text=""
+            android:background="@drawable/baseline_play_circle_24"
+            tools:layout_editor_absoluteX="175dp"
+            tools:layout_editor_absoluteY="51dp" />
+
+        <Button
+            android:id="@+id/textStartPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.1"
+            android:background="@color/red"
+            android:text="Start"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/racingArea"
+        android:layout_width="match_parent"
+        android:layout_height="461dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/racing2"
+        android:orientation="vertical">
+
+        <!-- Horse 1-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="33dp"
+            android:layout_marginBottom="2dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cb_horse1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="5dp" />
+
+            <SeekBar
+                android:id="@+id/sb_race_horse1"
+                android:layout_width="250dp"
+                android:layout_height="44dp"
+                android:layout_alignTop="@+id/cb_horse1"
+                android:layout_alignBottom="@+id/cb_horse1"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toEndOf="@+id/cb_horse1"
+                android:layout_toRightOf="@id/cb_horse1"
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp"
+                android:progressDrawable="@android:color/transparent"
+                android:thumb="@drawable/ic_horse_black" />
+
+            <TextView
+                android:id="@+id/txt_horse_1"
+                android:layout_width="78dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/sb_race_horse1"
+                android:layout_alignBottom="@+id/sb_race_horse1"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@+id/sb_race_horse1"
+                android:layout_toRightOf="@id/sb_race_horse1"
+                android:gravity="center"
+                android:text="Horse 1"
+                android:textColor="@color/horseNumber" />
+
+        </LinearLayout>
+
+        <!-- Horse 2-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cb_horse2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_above="@id/cb_horse1"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="5dp" />
+
+            <SeekBar
+                android:id="@+id/sb_race_horse2"
+                android:layout_width="250dp"
+                android:layout_height="44dp"
+                android:layout_alignTop="@+id/cb_horse2"
+                android:layout_alignBottom="@+id/cb_horse2"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toEndOf="@+id/cb_horse2"
+                android:layout_toRightOf="@id/cb_horse2"
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp"
+                android:progressDrawable="@android:color/transparent"
+                android:thumb="@drawable/ic_horse_green" />
+
+            <TextView
+                android:id="@+id/txt_horse_2"
+                android:layout_width="79dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/sb_race_horse2"
+                android:layout_alignBottom="@+id/sb_race_horse2"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="9dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@+id/sb_race_horse2"
+                android:layout_toRightOf="@id/sb_race_horse1"
+                android:gravity="center"
+                android:text="Horse 2"
+                android:textColor="@color/horseNumber" />
+        </LinearLayout>
+
+        <!-- Horse 3-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cb_horse3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_above="@id/cb_horse2"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="5dp" />
+
+            <SeekBar
+                android:id="@+id/sb_race_horse3"
+                android:layout_width="250dp"
+                android:layout_height="44dp"
+                android:layout_alignTop="@+id/cb_horse3"
+                android:layout_alignBottom="@+id/cb_horse3"
+                android:layout_marginTop="9dp"
+                android:layout_marginBottom="1dp"
+                android:layout_toEndOf="@+id/cb_horse3"
+                android:layout_toRightOf="@id/cb_horse3"
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp"
+                android:progressDrawable="@android:color/transparent"
+                android:thumb="@drawable/ic_horse_red" />
+
+            <TextView
+                android:id="@+id/txt_horse_3"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/sb_race_horse3"
+                android:layout_alignBottom="@+id/sb_race_horse3"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="9dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@+id/sb_race_horse3"
+                android:layout_toRightOf="@id/sb_race_horse2"
+                android:gravity="center"
+                android:text="Horse 3"
+                android:textColor="@color/horseNumber" />
+        </LinearLayout>
+
+
+        <!-- Horse 4-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="0dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cb_horse4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_above="@id/cb_horse3"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="5dp" />
+
+            <SeekBar
+                android:id="@+id/sb_race_horse4"
+                android:layout_width="250dp"
+                android:layout_height="44dp"
+                android:layout_alignTop="@+id/cb_horse4"
+                android:layout_alignBottom="@+id/cb_horse4"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toEndOf="@+id/cb_horse4"
+                android:layout_toRightOf="@id/cb_horse4"
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp"
+                android:progressDrawable="@android:color/transparent"
+                android:thumb="@drawable/ic_horse_purple" />
+
+            <TextView
+                android:id="@+id/txt_horse_4"
+                android:layout_width="84dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/sb_race_horse4"
+                android:layout_alignBottom="@+id/sb_race_horse4"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="9dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@+id/sb_race_horse4"
+                android:layout_toRightOf="@id/sb_race_horse3"
+                android:gravity="center"
+                android:text="Horse 4"
+                android:textColor="@color/horseNumber" />
+
+        </LinearLayout>
+
+        <!-- Horse 5-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="0dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cb_horse5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_above="@id/cb_horse4"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="5dp" />
+
+            <SeekBar
+                android:id="@+id/sb_race_horse5"
+                android:layout_width="250dp"
+                android:layout_height="44dp"
+                android:layout_alignTop="@+id/cb_horse5"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toEndOf="@+id/cb_horse5"
+                android:layout_toRightOf="@id/cb_horse5"
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp"
+                android:progressDrawable="@android:color/transparent"
+                android:thumb="@drawable/ic_horse_white" />
+
+            <TextView
+                android:id="@+id/txt_horse_5"
+                android:layout_width="84dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/sb_race_horse5"
+                android:layout_alignBottom="@+id/sb_race_horse5"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="9dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@+id/sb_race_horse5"
+                android:layout_toRightOf="@id/sb_race_horse4"
+                android:gravity="center"
+                android:text="Horse 5"
+                android:textColor="@color/horseNumber" />
+
+        </LinearLayout>
+
+        <!-- Horse 6-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="0dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cb_horse6"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_above="@id/cb_horse5"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="5dp" />
+
+            <SeekBar
+                android:id="@+id/sb_race_horse6"
+                android:layout_width="250dp"
+                android:layout_height="44dp"
+                android:layout_alignTop="@+id/cb_horse6"
+                android:layout_alignBottom="@+id/cb_horse6"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toEndOf="@+id/cb_horse6"
+                android:layout_toRightOf="@id/cb_horse6"
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp"
+                android:progressDrawable="@android:color/transparent"
+                android:thumb="@drawable/ic_horse_yellow" />
+
+            <TextView
+                android:id="@+id/txt_horse_6"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/sb_race_horse6"
+                android:layout_alignBottom="@+id/sb_race_horse6"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="9dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@+id/sb_race_horse6"
+                android:layout_toRightOf="@id/sb_race_horse5"
+                android:gravity="center"
+                android:text="Horse 6"
+                android:textColor="@color/horseNumber" />
+
+        </LinearLayout>
+
+        <!-- Horse 7-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cb_horse7"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_above="@id/cb_horse6"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="5dp" />
+
+            <SeekBar
+                android:id="@+id/sb_race_horse7"
+                android:layout_width="250dp"
+                android:layout_height="44dp"
+                android:layout_alignTop="@+id/cb_horse7"
+                android:layout_alignBottom="@+id/cb_horse7"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="3dp"
+                android:layout_toEndOf="@+id/cb_horse7"
+                android:layout_toRightOf="@id/cb_horse7"
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp"
+                android:progressDrawable="@android:color/transparent"
+                android:thumb="@drawable/ic_horse_pink" />
+
+            <TextView
+                android:id="@+id/txt_horse_7"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/sb_race_horse7"
+                android:layout_alignBottom="@+id/sb_race_horse7"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="9dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="9dp"
+                android:layout_toEndOf="@+id/sb_race_horse7"
+                android:layout_toRightOf="@id/sb_race_horse6"
+                android:gravity="center"
+                android:text="Horse 7"
+                android:textColor="@color/horseNumber" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/txt_welcome"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentTop="true"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_marginTop="3dp"-->
+    <!--        android:text="Funny Bet Racing"-->
+    <!--        android:textColor="#EC4747"-->
+    <!--        android:textSize="24dp" />-->
+
+    <RelativeLayout
+        android:id="@+id/popupContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="24dp"></RelativeLayout>
+
+
+</RelativeLayout>
