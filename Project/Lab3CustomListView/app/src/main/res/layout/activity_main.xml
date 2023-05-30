@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    ﻿
+
+    <ImageView
+        android:padding="10dp"
+        android:id="@+id/imageviewHinh"
+        android:layout_width="120dp"
+        android:layout_height="120dp" />
+    <TextView
+        android:id="@+id/textviewTen"
+        android:textColor="#ff00"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Ten"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageviewHinh"
+    tools:layout_editor_absoluteY="0dp" />
+    <TextView
+        android:id="@+id/textViewMota"
+        android:layout_width="266dp"
+        android:layout_height="57dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="16dp"
+        android:text="Mo ta"
+        android:textColor="#0A38E1"
+        android:textSize="22dp"
+        app:layout_constraintEnd_toEnd0f="parent"
+        app:layout_constraintTop_toBottonOf="@+id/textviewTen" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
